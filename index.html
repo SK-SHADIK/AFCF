@@ -5,9 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title> AFCF</title>
-        <link rel="shortcut icon" type="image/png" href="AFCF LOGO 16BY16.png">
+        <link rel="shortcut icon" type="image/png" href="IMG/AFCF LOGO 16BY16.png">
 
-        <link rel = "stylesheet" type = "text/css" href = "index_STYLE.css">
+        <link rel = "stylesheet" type = "text/css" href = "CSS/index_STYLE.css">
         <!--<link rel = "stylesheet" type = "text/css" href = "C:\Users\Shadik Hasan\Desktop\AFCF\fontawesome-free-5.15.0-web\css/all.css">-->
         <script src="https://kit.fontawesome.com/ec8ab4f226.js" crossorigin="anonymous"></script>
         
@@ -20,10 +20,10 @@
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-youtube"></i></a>
                 <a href="#"><i class="fab fa-tiktok"></i></a>
-                <div class="btn">
+                <!--<div class="btn">
                     <a href="#">LOGIN</a>
                     <a href="#">CREATE ACCOUNT</a>
-                </div>
+                </div>-->
             </div>
     
             <div class="middle-text">
@@ -35,7 +35,8 @@
         <nav>
             <div class="menu-bar"><span class="fas fa-bars"></span></div> <!--FOR 3 BAR MENUE ICON-->
 
-            <div class="logo"><img src="AFCF LOGO.png"></div> <!--LOGO-->
+            <div class="logo"><img src="IMG/AFCF LOGO.png"></div> <!--LOGO-->
+
 
             <div class="nav-bar"> <!--NAV BAR-->
                 <li><a href="#">HOME</a></li>
@@ -43,7 +44,7 @@
                 <li><a href="#">FISH</a></li>
                 <li><a href="#">ABOUT US</a></li>
                 <li><a href="#">CONTACT US</a></li>
-                <li><a href="#">FEEDBACK</a></li>
+                <li class="btnLog"><a href="#">LOGIN</a></li>
             </div>
 
             <div class="search-icon"><span class="fas fa-search"></span></div> <!--FOR SEARCH ICON-->
@@ -56,41 +57,53 @@
             </form>
         </nav>
 
+        <!--SLIDER-->
+        
+        <div class="slider-box">
+            <div class="image">
+                <img src="IMG/BISCUT.jpg" alt="" id="IMG">
+                <img src="IMG/KOI CARP 2.jpg" alt="" id="IMG">
+                <img src="IMG/POND.jpg" alt="" id="IMG">
+                <img src="IMG/CLEMON.jpg" alt="" id="IMG">
+                <img src="IMG/KOI CARP.jpg" alt="" id="IMG">
+            </div>
+            <div onclick="slide_slide(-1)" class="slide left">
+                <span class="fas fa-angle-left"></span>
+
+            </div>
+
+            <div onclick="slide_slide(1)" class="slide right">
+                <span class="fas fa-angle-right"></span>
+
+            </div>
+
+
+            <div class="btm-sliders">
+                <span onclick="btm_slide(1)"></span>
+                <span onclick="btm_slide(2)"></span>
+                <span onclick="btm_slide(3)"></span>
+                <span onclick="btm_slide(4)"></span>
+                <span onclick="btm_slide(5)"></span>
+            </div>
+        </div>
+
+        <!--YOUTUBE VIDEO AND LOCATION-->
+        <div class="box-yg">
+            <div class="yt">
+                <h3>YOUTUBE VIDEO:</h3>
+                <iframe src="https://www.youtube.com/embed/s1SL1ktDPkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+ 
+            <div class="map">
+                <h3>OUR LOCATION IS:</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.67581266937!2d89.47645981486654!3d24.772302084095703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fdaf10fb9720b9%3A0x1e8094f333fd2be4!2zQUxPTSBGSVNIIEFORCBDQVRUTEUgRkFSTSDgpobgprLgpq4g4Kar4Ka_4Ka4IOCmj-CmqOCnjeCmoSDgppXgp43gpq_gpr7gpp_gp4fgprIg4Kar4Ka-4Kaw4KeN4Kau!5e0!3m2!1sen!2sbd!4v1633700551022!5m2!1sen!2sbd" ></iframe>
+            </div>
+        </div>
+
+
         <!--JAVASCRIPT-->
 
-        <script>
-            //DECLARATION
-            const menuBtn =document.querySelector(".menu-bar span");
-            const searchBtn =document.querySelector(".search-icon");
-            const cancelBtn =document.querySelector(".cancel");
-            const bar =document.querySelector(".nav-bar");
-            const form =document.querySelector("form");
-
-            //MENUE ICON WORK
-            menuBtn.onclick = ()=>{
-                bar.classList.add("active");
-                menuBtn.classList.add("hide");
-                searchBtn.classList.add("hide");
-                cancelBtn.classList.add("show");
-            }
-
-            //CANCEL ICON WORK
-            cancelBtn.onclick = ()=>{
-                bar.classList.remove("active");
-                menuBtn.classList.remove("hide");
-                searchBtn.classList.remove("hide");
-                cancelBtn.classList.remove("show");
-                form.classList.remove("active");
-                cancelBtn.style.color = "#ff3d00";
-            }
-
-            //SEARCH ICON WORK
-            searchBtn.onclick = ()=>{
-                form.classList.add("active");
-                searchBtn.classList.add("hide");
-                cancelBtn.classList.add("show");
-            }
-        </script>
+        <script src="JS/index-script.js"></script>
         
     </body>
 </html>
