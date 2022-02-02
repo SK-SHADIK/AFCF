@@ -35,7 +35,7 @@
  //AUTO SLIDESHOW
  var indexValue = 0;
  function slideShow() {
-     setTimeout(slideShow, 2500);
+     setTimeout(slideShow, 5000);
      var x;
      const IMG = document.querySelectorAll("#IMG");
      for(x=0; x < IMG.length; x++){
