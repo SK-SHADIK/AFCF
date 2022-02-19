@@ -360,6 +360,7 @@ nav .cancel {
     display: flex;
     height: 400px;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 .box-yg .yt {
     margin-left: 10px;
@@ -398,6 +399,7 @@ nav .cancel {
     .box-yg {
         display: grid;
         width: 100%;
+        margin-bottom: 80%;
     }
     .box-yg .yt {
         width: 100%;
@@ -410,4 +412,166 @@ nav .cancel {
         margin-top: 5px;
     }  
 }
+@media (max-width: 510px) {
+    .box-yg {
+        margin-bottom: 100%;
+    }
+}
+@media (max-width: 410px) {
+    .box-yg {
+        margin-bottom: 120%;
+    }
+}
+@media (max-width: 340px) {
+    .box-yg {
+        margin-bottom: 140%;
+    }
+}
+@media (max-width: 290px) {
+    .box-yg {
+        margin-bottom: 160%;
+    }
+}
+@media (max-width: 250px) {
+    .box-yg {
+        margin-bottom: 180%;
+    }
+}
 
+/*TITLE*/
+.title {
+    text-align: center;
+}
+.title h3 {
+    color: salmon;
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: underline;
+}
+.title p {
+    color: coral;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+/*CARD SECTION*/
+.section {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 10px;
+}
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 325px;
+    height: 500px;
+    text-align: center;
+    margin: 25px;
+    cursor: pointer;
+    background: #000;
+    border-radius: 20px;
+}
+.card .img-section {
+    margin-top: 5px;
+    width: 90%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card .img-section img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid coral;
+    border-radius: 10px;
+}
+.card .img-section:hover {
+    border: 3px solid cornflowerblue;
+    border-radius: 10px;
+}
+.card .txt {
+    text-align: center;
+    margin-top: 20px;
+}
+.card .txt h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: crimson;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.card .txt p {
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+    color: darkcyan;
+}
+.card .button-card {
+    margin-top: 30px;
+}
+.card .button-card .first {
+    background: #1976d2;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.card .button-card .first:hover {
+    background: #f2533a;
+    color: #000;
+    border-radius: 0px;
+    transition: 0.3s;
+}
+.card .button-card .second {
+    background: #f2533a;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+}
+.card .button-card .second:hover{
+    background: #1976d2;
+    color: #000;
+    border-radius: 0px;
+    transition: 0.3s;
+}
+.card .rating {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card .rating i {
+    color: salmon;
+    padding: 0px 3px;
+    font-size: 18px;
+}
+
+@media (max-width: 370px) {
+    .card .button-card .first {
+        font-size: 8px;
+    }
+    .card .button-card .second {
+        font-size: 8px;
+    }
+}
+@media (max-width: 350px) {
+    .card .button-card .first {
+        font-size: 8px;
+    }
+    .card .button-card .second {
+        font-size: 8px;
+    }
+}
