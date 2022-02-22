@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+.about {
+    background: url('../IMG/LOGO.png') no-repeat left;
+    background-size: 45%;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.text-con {
+    width: 55%;
+    float: right;
+    background: salmon;
+    padding: 150px;
+}
+.text-con h1 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.text-con h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: cyan;
+}
+.txt {
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+} 
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 15px;
+}
+.buttons a{
+    text-decoration: none;
+    color: #000;
+    border: 3px solid aqua;
+}
+.buttons a:hover {
+    border: 3px solid #000;
+    color: #fff;
+    border-radius: 5px;
+}
+@media (max-width: 1200px){
+    .text-con {
+        padding: 80px;
+    }
+}
+@media (max-width: 1000px){
+    .about {
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .text-con {
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .about {
+        padding: 0;
+    }
+    .text-con {
+        padding: 60px;
+    }
+}
+@media (max-width: 470px) {
+    .buttons a {
+        font-size: 10px;
+    }
+}
+@media (max-width: 360px) {
+    .buttons {
+        display: grid;
+    }
+    .buttons span {
+        margin-bottom: 10px;
+    }
+}
